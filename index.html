@@ -23,17 +23,17 @@
       <div class="two-col">
         <div>
           <label for="firstname">Firstname *</label><br>
-          <input id="firstname" type="text" placeholder="Firstname" required>
+          <input id="firstname" name="firstname" type="text" placeholder="Firstname" required>
         </div>
         <div>
           <label for="lastname">Lastname *</label><br>
-          <input id="lastname" type="text" placeholder="Lastname" required>
+          <input id="lastname" name="lastname" type="text" placeholder="Lastname" required>
         </div>
       </div>
       <div class="two-col">
         <div>
           <label for="email">Email *</label><br>
-          <input id="email" type="email" placeholder="name@example.com" required>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required>
         </div>
         <div>
           <label for="country">Country of residence *</label><br>
@@ -354,8 +354,8 @@
         <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Enter password" required>
       </div>
       <div class="checkbox-container">
-        <input type="checkbox" id="termsAndConditions" required>
-        <label for="termsAndConditions" name="termsAndConditions">I accept the <a href="#" target="_blank">General Terms and Conditions</a> *</label>
+        <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+        <label for="termsAndConditions">I accept the <a href="#" target="_blank">General Terms and Conditions</a> *</label>
       </div>
       <div class="checkbox-container">
         <input type="checkbox" id="privacyNotice" name="privacyNotice" required>
