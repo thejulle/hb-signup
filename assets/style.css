@@ -1,0 +1,164 @@
+:root {
+  --white: #FFF;
+  --black: #000;
+  --gray: #BFBFBF;
+  --light-gray: #E9F1FD;
+  --blue: #0064FF;
+}
+
+@font-face {
+  font-family: 'Platform Web';
+  src:  url('./fonts/Platform-Medium-Web.woff2') format('woff2'),
+        url('./fonts/Platform-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+  background: var(--light-gray);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Platform Web', sans-serif;
+}
+
+a {
+  color: var(--blue);
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: var(--blue);
+}
+
+.site-header a {
+  display: inline-block;
+  width: 108px;
+}
+
+.container {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+form {
+  margin-bottom: 2.25rem;
+  padding: 2.25rem;
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  form {
+    padding: 3rem;
+  }
+
+  form .two-col {
+    display: flex;
+    column-gap: 1.5rem;    
+  }
+
+  form .two-col > div {
+    width: 50%;
+  }
+}
+
+form .checkbox-container {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 1rem;
+}
+
+form label {
+  display: inline-block;
+  margin: 0 0 .25rem;
+  font-size: .75rem;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 1.75rem;
+  padding: 4px 0;
+  font-size: 1.25rem;
+  letter-spacing: .02em;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--black);
+}
+
+form input::placeholder {
+  color: var(--gray);
+}
+
+form input[type=text],
+form input[type=email] {
+  width: 100%;
+}
+
+form input[type=checkbox] {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+form input[type=checkbox] + label {
+  margin: 3px 0 1.5rem;
+  font-size: .875rem;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+form input[type=submit] {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 20px 28px;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--white);
+  text-align: center;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 4rem;
+  cursor:pointer;
+}
+
+form select {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 4px 0;
+  font-size: 1.25rem;
+  letter-spacing: .02em;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--black);
+  cursor: pointer;
+}
+
+.text-right {
+  text-align: right;
+}
