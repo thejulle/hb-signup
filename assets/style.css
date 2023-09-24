@@ -73,12 +73,12 @@ form {
     padding: 3rem;
   }
 
-  form .two-col {
+  .two-col {
     display: flex;
     column-gap: 1.5rem;    
   }
 
-  form .two-col > div {
+  .two-col > div {
     width: 50%;
   }
 }
